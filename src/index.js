@@ -5,6 +5,7 @@ const Weather = () => {
   return (
     <View>
       <Text>This project will track Ev charging stations across the country</Text>
+      <Text>I hope this project will go a long way to impact lives and solve problems in the seeable future</Text>
     </View>
   )
 }
