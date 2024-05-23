@@ -4,7 +4,7 @@ import React from 'react'
 const Weather = () => {
   return (
     <View>
-      <Text> Weather</Text>
+      <Text>This project will track Ev charging stations across the country</Text>
     </View>
   )
 }
