@@ -5,6 +5,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>This is the project we're collaborating on ys kay</Text>
+      <Text>Just wanted to make a commit at least</Text>
       <StatusBar style="auto" />
     </View>
   );
