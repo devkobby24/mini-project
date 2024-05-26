@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
 import { useCallback } from 'react';
-import LoginScreen from './App/Screen/LoginScreen/LoginScreen';
+import LoginScreen from '../mini-project/App/Screen/loginScreen/LoginScreen';
 
 SplashScreen.preventAutoHideAsync();
 
