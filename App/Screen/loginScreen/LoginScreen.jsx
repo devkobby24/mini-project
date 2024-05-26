@@ -1,14 +1,14 @@
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, Image, SafeAreaView } from 'react-native'
 import React from 'react'
-import { responsiveFontSizes } from '@material-ui/core'
+
 
 export default function LoginScreen() {
   return (
-    <View>
-      <Image source={require('./../../../assets/images/logo.jpg')} 
+    <SafeAreaView>
+      <Image source={require('./../../../assets/images/logo1.png')} 
         style={styles.logoImage}
       />
-    </View>
+    </SafeAreaView>
   )
 }
 
