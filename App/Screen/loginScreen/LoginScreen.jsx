@@ -1,5 +1,6 @@
-import { View, Text, StyleSheet, Image, SafeAreaView } from 'react-native'
-import React from 'react'
+import { View, Text, StyleSheet, Image, SafeAreaView } from 'react-native';
+import React from 'react';
+import Colors from '../../Utils/Colors'
 
 
 export default function LoginScreen() {
@@ -18,6 +19,14 @@ export default function LoginScreen() {
       <View style={{padding:20}}>
         <Text style={styles.heading}>Your Ultimate EV Charging station finder App</Text>
         <Text style={styles.desc}>Find EV charging stations near you, plan trips and so much more in just one click</Text>
+          <View style={styles.button}>
+              <Text style={{
+                color:Colors.WHITE,
+                textAlign:'center',
+                fontFamily:'outfit',
+                fontSize:17
+              }}>Login With Google</Text>
+          </View>
       </View>
     </SafeAreaView>
   )
@@ -45,7 +54,15 @@ const styles = StyleSheet.create({
       fontSize:20,
       fontFamily:'outfit-medium',
       textAlign:'center',
-      marginTop:20
+      marginTop:20,
+      color:Colors.GRAY
+    },
+    button:{
+      backgroundColor:Colors.PRIMARY,
+      padding:16,
+      display:'flex',
+      borderRadius:99,
+      marginTop:20,
     },
 
 })
