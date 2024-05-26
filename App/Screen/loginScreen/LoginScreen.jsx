@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Image, SafeAreaView } from 'react-native';
+import { View, Text, StyleSheet, Image, SafeAreaView, Touchable, TouchableOpacity } from 'react-native';
 import React from 'react';
 import Colors from '../../Utils/Colors'
 
@@ -9,6 +9,7 @@ export default function LoginScreen() {
       display:'flex',
       justifyContent: 'center',
       alignItems:'center',
+      marginTop:80
     }}>
       <Image source={require('./../../../assets/images/logo1.png')} 
         style={styles.logoImage}
@@ -19,14 +20,16 @@ export default function LoginScreen() {
       <View style={{padding:20}}>
         <Text style={styles.heading}>Your Ultimate EV Charging station finder App</Text>
         <Text style={styles.desc}>Find EV charging stations near you, plan trips and so much more in just one click</Text>
-          <View style={styles.button}>
+          <TouchableOpacity style={styles.button}
+          onPress={()=> console.log("Pressed")}
+          >
               <Text style={{
                 color:Colors.WHITE,
                 textAlign:'center',
                 fontFamily:'outfit',
                 fontSize:17
               }}>Login With Google</Text>
-          </View>
+          </TouchableOpacity>
       </View>
     </SafeAreaView>
   )
@@ -62,7 +65,7 @@ const styles = StyleSheet.create({
       padding:16,
       display:'flex',
       borderRadius:99,
-      marginTop:20,
+      marginTop:40,
     },
 
 })
