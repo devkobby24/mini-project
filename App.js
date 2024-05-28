@@ -43,7 +43,9 @@ export default function App() {
     return null;
   }
   return (
-    <ClerkProvider publishableKey={'pk_test_bWFzdGVyLW1pbm5vdy02OS5jbGVyay5hY2NvdW50cy5kZXYk'}>
+    <ClerkProvider 
+    tokenCache={tokenCache}
+    publishableKey={'pk_test_bWFzdGVyLW1pbm5vdy02OS5jbGVyay5hY2NvdW50cy5kZXYk'}>
       <SafeAreaView style={styles.container} onLayout={onLayoutRootView}>
         <SignedIn>
           <Text>You are Signed in</Text>
