@@ -1,5 +1,5 @@
 {
-  "name": "weather",
+  "name": "ev-app",
   "version": "1.0.0",
   "main": "expo/AppEntry.js",
   "scripts": {
@@ -9,6 +9,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@clerk/clerk-expo": "^1.1.8",
     "@expo/vector-icons": "^14.0.2",
     "expo": "~51.0.8",
     "expo-constants": "~16.0.1",
