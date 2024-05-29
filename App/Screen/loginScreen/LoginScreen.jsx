@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Image, SafeAreaView, Touchable, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, Image, SafeAreaView, TouchableOpacity } from 'react-native';
 import React from 'react';
 import Colors from '../../Utils/Colors';
 import * as WebBrowser from 'expo-web-browser';
