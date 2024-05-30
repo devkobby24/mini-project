@@ -56,7 +56,7 @@ export default function LoginScreen() {
     </SafeAreaView>
   )
 }
-
+    // styling
 const styles = StyleSheet.create({
     logoImage:{
       width:200,
