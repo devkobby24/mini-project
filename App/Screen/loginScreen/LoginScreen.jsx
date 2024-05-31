@@ -49,7 +49,7 @@ export default function LoginScreen() {
                 color:Colors.WHITE,
                 textAlign:'center',
                 fontFamily:'outfit',
-                fontSize:17
+                fontSize:18
               }}>Login With Google</Text>
           </TouchableOpacity>
       </View>
