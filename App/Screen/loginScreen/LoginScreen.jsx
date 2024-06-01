@@ -31,7 +31,7 @@ export default function LoginScreen() {
       display:'flex',
       justifyContent: 'center',
       alignItems:'center',
-      marginTop:80
+      marginTop:85
     }}>
       <Image source={require('./../../../assets/images/logo1.png')} 
         style={styles.logoImage}
