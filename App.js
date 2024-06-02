@@ -6,6 +6,8 @@ import { useCallback } from 'react';
 import LoginScreen from './App/Screen/LoginScreen/LoginScreen';
 import { ClerkProvider, SignedIn, SignedOut } from '@clerk/clerk-expo';
 import * as SecureStore from "expo-secure-store";
+import TabNavigation from './App/Navigations/TabNavigation';
+import { NavigationContainer } from '@react-navigation/native';
 
 SplashScreen.preventAutoHideAsync();
 const tokenCache = {
@@ -48,7 +50,9 @@ export default function App() {
     publishableKey={'pk_test_bWFzdGVyLW1pbm5vdy02OS5jbGVyay5hY2NvdW50cy5kZXYk'}>
       <SafeAreaView style={styles.container} onLayout={onLayoutRootView}>
         <SignedIn>
-          <Text>You are Signed in</Text>
+            <NavigationContainer >
+                <TabNavigation />
+            </NavigationContainer>
         </SignedIn>
 
         <SignedOut>
