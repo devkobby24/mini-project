@@ -7,7 +7,7 @@ const Tab = createBottomTabNavigator();
 export default function TabNavigation() {
   return (
     <Tab.Navigator>
-      <Text>TabNavigation</Text>
+      
     </Tab.Navigator>
   )
 }
