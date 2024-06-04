@@ -15,7 +15,7 @@ export default function TabNavigation() {
     <Tab.Navigator screenOptions={{
         headerShown: false
     }}>
-        <Tab.Screen name='home'
+        <Tab.Screen name='Home'
         component={HomeScreen} 
         options={{
             tabBarLabel: 'Home',
@@ -25,7 +25,7 @@ export default function TabNavigation() {
             )
         }}
         />
-        <Tab.Screen name='favorite'
+        <Tab.Screen name='Favorite'
         component={FavoriteScreen}
         options={{
             tabBarLabel: 'Favorite ',
