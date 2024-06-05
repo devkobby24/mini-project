@@ -35,7 +35,7 @@ export default function TabNavigation() {
             )
         }}
          />
-        <Tab.Screen name='profile'
+        <Tab.Screen name='Profile'
         component={ProfileScrren}
         options={{
             tabBarLabel: 'Profile',
