@@ -6,11 +6,17 @@ import { UserLocationContext } from '../../Context/UserLocationContext';
 export default function AppMapView() {
 
     const {location,setLocation} = useContext(UserLocationContext);   
-  return (
+  return location?.latitude&&(
     <View>
       <MapView style={styles.map}
       provider={PROVIDER_DEFAULT}
-      showsUserLocation={true} 
+      showsUserLocation={true}
+      region={{
+        latitude: location?.latitude,
+        longitude: location?.longitude,
+        latitudeDelta:0.0422,
+        longitudeDelta:0.0421
+      }} 
       />
     </View>
   )
