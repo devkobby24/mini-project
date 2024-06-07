@@ -1,11 +1,13 @@
 import { View, Text, StyleSheet } from 'react-native';
 import React from 'react';
-import MapView from 'react-native-maps';
+import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
 
 export default function AppMapView() {
   return (
     <View>
-      <MapView style={styles.map} />
+      <MapView style={styles.map} 
+        showsUserLocation={true}
+      />
     </View>
   )
 }
