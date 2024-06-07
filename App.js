@@ -1,14 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import { useFonts } from 'expo-font';
-import * as SplashScreen from 'expo-splash-screen';
-import { useCallback } from 'react';
+import * as SplashScreen from 'expo-splash-screen'; 
+import { useCallback,useState,useEffect } from 'react';
 import LoginScreen from './App/Screen/LoginScreen/LoginScreen';
 import { ClerkProvider, SignedIn, SignedOut } from '@clerk/clerk-expo';
 import * as SecureStore from "expo-secure-store";
 import TabNavigation from './App/Navigations/TabNavigation';
 import { NavigationContainer } from '@react-navigation/native';
 import * as Location from 'expo-location';
+import { UserLocationContext } from './App/Context/UserLocationContext';
 
 SplashScreen.preventAutoHideAsync();
 const tokenCache = {
@@ -50,8 +51,8 @@ export default function App() {
       }
 
       let location = await Location.getCurrentPositionAsync({});
-      setLocation(location);
-      console.log(location)
+      setLocation(location.coords);
+      
     })();
   }, []);
 
@@ -75,6 +76,7 @@ export default function App() {
     <ClerkProvider 
     tokenCache={tokenCache}
     publishableKey={'pk_test_bWFzdGVyLW1pbm5vdy02OS5jbGVyay5hY2NvdW50cy5kZXYk'}>
+      <UserLocationContext.Provider value={{location,setLocation}}>
       <SafeAreaView style={styles.container} onLayout={onLayoutRootView}>
         <SignedIn>
             <NavigationContainer >
@@ -88,6 +90,7 @@ export default function App() {
         
         <StatusBar style="auto" />
       </SafeAreaView>
+      </UserLocationContext.Provider>
     </ClerkProvider>
   );
 }

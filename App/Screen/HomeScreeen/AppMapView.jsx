@@ -1,8 +1,11 @@
 import { View, Text, StyleSheet } from 'react-native';
-import React from 'react';
+import React, { useContext } from 'react';
 import MapView, { PROVIDER_DEFAULT, PROVIDER_GOOGLE } from 'react-native-maps';
+import { UserLocationContext } from '../../Context/UserLocationContext';
 
 export default function AppMapView() {
+
+    const {location,setLocation} = useContext(UserLocationContext);   
   return (
     <View>
       <MapView style={styles.map}
