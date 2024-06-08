@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet } from 'react-native';
 import React, { useContext } from 'react';
-import MapView, { PROVIDER_DEFAULT, PROVIDER_GOOGLE } from 'react-native-maps';
+import MapView, { Marker, PROVIDER_DEFAULT, PROVIDER_GOOGLE } from 'react-native-maps';
 import { UserLocationContext } from '../../Context/UserLocationContext';
 
 export default function AppMapView() {
@@ -17,7 +17,13 @@ export default function AppMapView() {
         latitudeDelta:0.0422,
         longitudeDelta:0.0421
       }} 
-      />
+      >
+        <Marker 
+          coordinate={{
+            latitude: location?.latitude,
+          }}
+        />
+      </MapView>
     </View>
   )
 }
