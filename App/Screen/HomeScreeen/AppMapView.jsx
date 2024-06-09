@@ -10,7 +10,7 @@ export default function AppMapView() {
     <View>
       <MapView style={styles.map}
       provider={PROVIDER_DEFAULT}
-      showsUserLocation={true}
+      // showsUserLocation={true}
       region={{
         latitude: location?.latitude,
         longitude: location?.longitude,
