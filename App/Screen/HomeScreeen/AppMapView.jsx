@@ -21,6 +21,7 @@ export default function AppMapView() {
         <Marker 
           coordinate={{
             latitude: location?.latitude,
+            longitude: location?.longitude,
           }}
         />
       </MapView>
