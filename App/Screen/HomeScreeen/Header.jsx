@@ -1,7 +1,7 @@
 import { View, Text, Image, StyleSheet } from 'react-native'
 import React from 'react'
 import { useUser } from '@clerk/clerk-expo'
-import { AntDesign } from '@expo/vector-icons';
+import { FontAwesome } from '@expo/vector-icons';
 import Colors from '../../Utils/Colors';
 
 export default function Header() {
@@ -15,7 +15,7 @@ export default function Header() {
       <Image source={require('../../../assets/images/logo1.png')} 
         style={styles.logo}
       />
-      <AntDesign name="filter" size={26} color="black" />
+      <FontAwesome name="filter" size={26} color="black" />
     </View>
   )
 }
@@ -24,7 +24,8 @@ const styles = StyleSheet.create({
     logo:{
         width:200,
         height:45,
-        objectFit:'contain'
+        objectFit:'contain',
+        backfaceVisibility
     },
     userImage:{
         width:45,
@@ -35,8 +36,7 @@ const styles = StyleSheet.create({
         display:'flex',
         flexDirection: 'row',
         justifyContent:'space-between',
-        alignItems:'center',
-        backgroundColor:Colors.TRANSPARENT
+        alignItems:'center',       
     }
 
 
