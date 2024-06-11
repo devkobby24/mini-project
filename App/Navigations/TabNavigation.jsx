@@ -14,14 +14,14 @@ export default function TabNavigation() {
   return (
     <Tab.Navigator screenOptions={{
         headerShown: false
-    }}>
+    }}  style={styles.tabStyle}>
         <Tab.Screen name='Home'
         component={HomeScreen} 
         options={{
             tabBarLabel: 'Home',
             tabBarActiveTintColor:Colors.PRIMARY,
             tabBarIcon: ({color}) => (
-                <AntDesign name="home" size={24} color={color}  />
+                <AntDesign name="home" size={24} color={Colors.WHITE}  />
             )
         }}
         />
@@ -31,7 +31,7 @@ export default function TabNavigation() {
             tabBarLabel: 'Favorite ',
             tabBarActiveTintColor:Colors.PRIMARY,
             tabBarIcon: ({color}) => (
-                <MaterialIcons name="favorite" size={24} color={color} />
+                <MaterialIcons name="favorite" size={24} color={Colors.WHITE} />
             )
         }}
          />
@@ -41,9 +41,17 @@ export default function TabNavigation() {
             tabBarLabel: 'Profile',
             tabBarActiveTintColor:Colors.PRIMARY,
             tabBarIcon: ({color}) => (
-                <Feather name="user" size={24} color={color} />
+                <Feather name="user" size={24} color={Colors.WHITE} />
             )
         }} />
     </Tab.Navigator>
   )
 }
+
+const styles = StyleSheet.create({
+    tabStyle:{
+        backgroundColor:  'black',
+        borderTopStartRadius: 40,
+        borderTopEndRadius: 40,
+    }
+})
