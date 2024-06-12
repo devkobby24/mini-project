@@ -7,14 +7,16 @@ import { AntDesign } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
 import Colors from '../Utils/Colors';
+import { StyleSheet } from 'react-native';
 
 const Tab = createBottomTabNavigator();
 
 export default function TabNavigation() {
   return (
-    <Tab.Navigator screenOptions={{
+    <Tab.Navigator  //style={styles.tabStyle}
+    screenOptions={{
         headerShown: false
-    }}  style={styles.tabStyle}>
+    }} >
         <Tab.Screen name='Home'
         component={HomeScreen} 
         options={{
@@ -48,10 +50,10 @@ export default function TabNavigation() {
   )
 }
 
-const styles = StyleSheet.create({
-    tabStyle:{
-        backgroundColor:Colors.TRANSPARENT,
-        borderTopStartRadius: 40,
-        borderTopEndRadius: 40,
-    }
-})
+// const styles = StyleSheet.create({
+//     tabStyle: {
+//         backgroundColor:'black',
+//         borderTopStartRadius: 40,
+//         borderTopEndRadius: 40,
+//     }
+// })

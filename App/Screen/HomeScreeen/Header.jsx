@@ -25,7 +25,6 @@ const styles = StyleSheet.create({
         width:200,
         height:45,
         objectFit:'contain',
-        backfaceVisibility
     },
     userImage:{
         width:45,
