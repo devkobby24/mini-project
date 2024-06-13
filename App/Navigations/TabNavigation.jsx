@@ -42,7 +42,7 @@ export default function TabNavigation() {
         options={{
             tabBarLabel: 'Profile',
             tabBarActiveTintColor:Colors.PRIMARY,
-            tabBarIcon: ({color}) => (
+            tabBarIcon: ({color}) => ( 
                 <Feather name="user" size={24} color={color} />
             )
         }} />
