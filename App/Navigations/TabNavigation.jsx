@@ -38,7 +38,7 @@ export default function TabNavigation() {
         }} 
          />
         <Tab.Screen name='Profile'
-        component={ProfileScrren}
+        component={ProfileScrren} 
         options={{
             tabBarLabel: 'Profile',
             tabBarActiveTintColor:Colors.PRIMARY,
