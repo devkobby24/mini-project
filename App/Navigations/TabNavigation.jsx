@@ -44,7 +44,7 @@ export default function TabNavigation() {
             tabBarActiveTintColor:Colors.PRIMARY,
             tabBarIcon: ({color}) => ( 
                 <Feather name="user" size={24} color={color} />
-            )  
+            )     
         }} />
     </Tab.Navigator>
   )
