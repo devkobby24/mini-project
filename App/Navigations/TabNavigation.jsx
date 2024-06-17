@@ -47,7 +47,7 @@ export default function TabNavigation() {
             )     
         }} />
     </Tab.Navigator>
-  )
+  )     
 }
 
 // const styles = StyleSheet.create({
