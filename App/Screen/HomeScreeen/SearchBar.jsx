@@ -1,12 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
+import Colors from '../../Utils/Colors';
 
 export default function SearchBar() {
   return (
     <View>
       <GooglePlacesAutocomplete
       placeholder='Search EV Charging Station'
+      fetchDetails={true}
       enablePoweredByContainer={false}
       onPress={(data, details = null) => {
         // 'details' is provided when fetchDetails = true
@@ -21,4 +23,9 @@ export default function SearchBar() {
   )
 }
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    searchbar:{
+        borderRadius:"15px",
+        backgroundColor: Colors.TRANSPARENT
+    }
+})
