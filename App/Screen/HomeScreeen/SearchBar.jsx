@@ -3,7 +3,7 @@ import React from 'react';
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 import Colors from '../../Utils/Colors';
 
-export default function SearchBar() {
+export default function SearchBar({searchedLocation}) {
   return (
     <View style={styles.searchbar}>
       <GooglePlacesAutocomplete
@@ -12,7 +12,8 @@ export default function SearchBar() {
       enablePoweredByContainer={false}
       onPress={(data, details = null) => {
         // 'details' is provided when fetchDetails = true
-        console.log(data, details);
+        //console.log(data, details);
+        searchedLocation(details?.geometry?.location)
       }}
       query={{
         key: 'AIzaSyDGAs9NQQD_LzlJ88zSYWDyWMwQXkOMo8M',

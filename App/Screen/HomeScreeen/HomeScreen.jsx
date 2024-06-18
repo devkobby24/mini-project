@@ -9,7 +9,7 @@ export default function HomeScreen() {
     <SafeAreaView>
       <View style={styles.headerContainer}>
         <Header />
-        <SearchBar />
+        <SearchBar searchedLocation={(location)=>console.log(location)}/>
       </View>
       <AppMapView />
     </SafeAreaView>
