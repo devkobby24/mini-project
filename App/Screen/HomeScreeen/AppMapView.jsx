@@ -2,6 +2,7 @@ import { View, Text, StyleSheet, Image } from 'react-native';
 import React, { useContext } from 'react';
 import MapView, { Marker, PROVIDER_DEFAULT, PROVIDER_GOOGLE } from 'react-native-maps';
 import { UserLocationContext } from '../../Context/UserLocationContext';
+import MapViewStlye from '../../Utils/MapViewStyle.json'
 
 export default function AppMapView() {
 
@@ -10,6 +11,7 @@ export default function AppMapView() {
     <View>
       <MapView style={styles.map}
       provider={PROVIDER_DEFAULT}
+      customMapStyle={MapViewStlye}
       // showsUserLocation={true}
       region={{
         latitude: location?.latitude,
