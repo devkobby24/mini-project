@@ -7,7 +7,7 @@ import { AntDesign } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
 import Colors from '../Utils/Colors';
-import { StyleSheet } from 'react-native';
+//import { StyleSheet } from 'react-native';
 
 const Tab = createBottomTabNavigator();
 
