@@ -6,7 +6,7 @@ export default function SearchBar() {
   return (
     <View>
       <GooglePlacesAutocomplete
-      placeholder='Search'
+      placeholder='Search EV Charging Station'
       enablePoweredByContainer={false}
       onPress={(data, details = null) => {
         // 'details' is provided when fetchDetails = true
