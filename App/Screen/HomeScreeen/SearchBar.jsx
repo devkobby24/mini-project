@@ -5,7 +5,7 @@ import Colors from '../../Utils/Colors';
 
 export default function SearchBar() {
   return (
-    <View>
+    <View style={styles.searchbar}>
       <GooglePlacesAutocomplete
       placeholder='Search EV Charging Station'
       fetchDetails={true}
