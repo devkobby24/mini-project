@@ -25,7 +25,11 @@ export default function SearchBar() {
 
 const styles = StyleSheet.create({
     searchbar:{
-        borderRadius:"15px",
-        backgroundColor: Colors.TRANSPARENT
+        borderRadius:15,
+        backgroundColor: Colors.TRANSPARENT,
+        display:'flex',
+        flexDirection:'row',
+        marginTop:15,
+        paddingHorizontal:5
     }
 })
