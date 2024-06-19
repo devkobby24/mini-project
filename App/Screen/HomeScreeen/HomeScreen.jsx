@@ -4,7 +4,7 @@ import AppMapView from './AppMapView'
 import Header from './Header'
 import SearchBar from './SearchBar'
 
-export default function HomeScreen() {
+export default function HomeScreen() { 
   return (
     <SafeAreaView>
       <View style={styles.headerContainer}>
