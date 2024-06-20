@@ -14,7 +14,7 @@ export default function HomeScreen() {
       <AppMapView />
     </SafeAreaView>
   )
-}
+}   
 
 const styles = StyleSheet.create({
   headerContainer:{
