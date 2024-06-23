@@ -81,7 +81,7 @@ export default function App() {
         <SignedIn>
             <NavigationContainer >
                 <TabNavigation />
-            </NavigationContainer>
+            </NavigationContainer>  
         </SignedIn>
 
         <SignedOut>
