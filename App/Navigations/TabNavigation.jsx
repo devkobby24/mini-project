@@ -5,7 +5,7 @@ import FavoriteScreen from '../Screen/FavoriteScreen/FavoriteScreen';
 import ProfileScrren from '../Screen/ProfileScreen/ProfileScrren';
 import { AntDesign } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';   
-import { Feather } from '@expo/vector-icons';
+import { Feather } from '@expo/vector-icons';   
 import Colors from '../Utils/Colors';
 //import { StyleSheet } from 'react-native';   
 
