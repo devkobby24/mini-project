@@ -88,7 +88,7 @@ export default function App() {
           <LoginScreen />
         </SignedOut>
         
-        <StatusBar style="auto" />
+        <StatusBar style="auto" />   
       </SafeAreaView>
       </UserLocationContext.Provider>
     </ClerkProvider>
