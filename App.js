@@ -86,7 +86,7 @@ export default function App() {
 
         <SignedOut>
           <LoginScreen />
-        </SignedOut>
+        </SignedOut>  
           
         <StatusBar style="auto" />   
       </SafeAreaView>
