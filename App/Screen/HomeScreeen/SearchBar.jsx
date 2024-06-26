@@ -36,8 +36,4 @@ const styles = StyleSheet.create({
         marginTop:15,
         paddingHorizontal:5
     },
-    locationIcon:{
-
-    }
-
 })
