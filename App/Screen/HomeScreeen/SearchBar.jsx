@@ -18,6 +18,7 @@ export default function SearchBar({searchedLocation}) {
         searchedLocation(details?.geometry?.location)
       }}
       query={{
+        //this is my api_key:
         //key: 'AIzaSyDGAs9NQQD_LzlJ88zSYWDyWMwQXkOMo8M',
         key: 'AIzaSyB9ctiAb-J9CZil_ZlpAg3ZOXpxwudHlNw',
         language: 'en',
