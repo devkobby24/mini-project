@@ -23,6 +23,7 @@ export default function SearchBar({searchedLocation}) {
         key: 'AIzaSyB9ctiAb-J9CZil_ZlpAg3ZOXpxwudHlNw',
         language: 'en',
       }}
+      
     />
     </View>
   )
