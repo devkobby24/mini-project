@@ -25,7 +25,7 @@ export default function SearchBar({searchedLocation}) {
       }}
                  
     />
-    </View>
+    </View> 
   )
 }
 
