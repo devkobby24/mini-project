@@ -10,9 +10,12 @@ export default function HomeScreen() {
 
   const {location,setLocation}=useContext(UserLocationContext);
   const [placeList,setPlaceList]=useState([])
-  useEffect(()=>{
-    location&&GetNearByPlace();
-  },[location])
+  
+  useEffect(() => {
+    if (location) {
+      GetNearByPlace();
+    }
+  }, [location]);
 
   const GetNearByPlace=()=>{
     const data={
@@ -28,9 +31,16 @@ export default function HomeScreen() {
       }
     }
   }
-    GlobalApi.NewNearByPlace(data).then(resp=>{
+  //   GlobalApi.NewNearByPlace(data).then(resp=>{
+  //     console.log(JSON.stringify(resp.data));
+  //   })
+  // }
+  GlobalApi.NewNearByPlace(data).then(resp => {
       console.log(JSON.stringify(resp.data));
-    })
+      setPlaceList(resp.data); // Assuming you want to update placeList with response data
+    }).catch(error => {
+      console.error("Error fetching nearby places:", error);
+    });
   }
 
   return (
@@ -52,4 +62,4 @@ const styles = StyleSheet.create({
     width:'100%',
     paddingHorizontal:20
   }
-})
+});
