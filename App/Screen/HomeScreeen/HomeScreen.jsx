@@ -1,5 +1,5 @@
 import { View, Text, SafeAreaView, StyleSheet } from 'react-native'
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import AppMapView from './AppMapView'
 import Header from './Header'
 import SearchBar from './SearchBar'
@@ -10,6 +10,10 @@ export default function HomeScreen() {
 
   const {location,setLocation}=useContext(UserLocationContext);
 
+  useEffect(()=>{
+    location&&GetNearByPlace();
+  },[location])
+  
   const GetNearByPlace=()=>{
     const data={
       "includedTypes": ['electric_vehicle_charging_station'],
@@ -20,7 +24,7 @@ export default function HomeScreen() {
         "latitude": location?.latitude,
         "longitude": location?.longitude
       },
-      "radius": 500.0
+      "radius": 5000.0
       }
     }
   }
