@@ -12,13 +12,14 @@ export default function HomeScreen() {
 
   const GetNearByPlace=()=>{
     const data={
-      "includedTypes": ["restaurant"],
+      "includedTypes": ['electric_vehicle_charging_station'],
       "maxResultCount": 10,
       "locationRestriction": {
       "circle": {
       "center": {
-        "latitude": 37.7937,
-        "longitude": -122.3965},
+        "latitude": location?.latitude,
+        "longitude": location?.longitude
+      },
       "radius": 500.0
       }
     }
