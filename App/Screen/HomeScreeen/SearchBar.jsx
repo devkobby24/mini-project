@@ -7,7 +7,8 @@ import { Ionicons } from '@expo/vector-icons';
 export default function SearchBar({searchedLocation}) {
   return (
     <View style={styles.searchbar}>
-        <Ionicons name="location-sharp" size={24} color={Colors.GRAY} style={{paddingTop:10}}/>
+      <Ionicons name="location-sharp" size={24} color={Colors.GRAY} style={{paddingTop:10}}/>
+
       <GooglePlacesAutocomplete
       placeholder='Search EV Charging Station'
       fetchDetails={true}
@@ -15,7 +16,7 @@ export default function SearchBar({searchedLocation}) {
       onPress={(data, details = null) => {
         // 'details' is provided when fetchDetails = true
             
-        searchedLocation(details?.geometry?.location)
+        searchedLocation(details?.geometry?.location);
       }}
       query={{  
         //this is my api_key:
@@ -26,7 +27,7 @@ export default function SearchBar({searchedLocation}) {
                  
     />
     </View> 
-  )
+  );
 }
 
 const styles = StyleSheet.create({
@@ -38,4 +39,4 @@ const styles = StyleSheet.create({
         marginTop:15,
         paddingHorizontal:5
     },
-})
+});
