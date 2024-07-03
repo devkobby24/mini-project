@@ -1,10 +1,33 @@
 import { View, Text, SafeAreaView, StyleSheet } from 'react-native'
-import React from 'react'
+import React, { useContext } from 'react'
 import AppMapView from './AppMapView'
 import Header from './Header'
 import SearchBar from './SearchBar'
+import { UserLocationContext } from '../../Context/UserLocationContext'
+import GlobalApi from '../../Utils/GlobalApi'
 
 export default function HomeScreen() { 
+
+  const {location,setLocation}=useContext(UserLocationContext);
+
+  const GetNearByPlace=()=>{
+    const data={
+      "includedTypes": ["restaurant"],
+      "maxResultCount": 10,
+      "locationRestriction": {
+      "circle": {
+      "center": {
+        "latitude": 37.7937,
+        "longitude": -122.3965},
+      "radius": 500.0
+      }
+    }
+  }
+    GlobalApi.NewNearByPlace(data).then(resp=>{
+      console.log(resp.data);
+    })
+  }
+
   return (
     <SafeAreaView>
       <View style={styles.headerContainer}>

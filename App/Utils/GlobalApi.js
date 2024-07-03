@@ -1,3 +1,5 @@
+import axios from "axios";
+
 const BASE_URL="https://places.googleapis.com/v1/places:searchNearby";
 const API_KEY="AIzaSyB9ctiAb-J9CZil_ZlpAg3ZOXpxwudHlNw";
 
@@ -11,4 +13,10 @@ const config={
             'places.evChargerOptions',
             'places.photos']
     }
+}
+
+const NewNearByPlace=(data)=>axios.post(BASE_URL,data,config);
+
+export default{
+    NewNearByPlace
 }
