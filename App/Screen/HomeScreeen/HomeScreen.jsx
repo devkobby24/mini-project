@@ -13,7 +13,7 @@ export default function HomeScreen() {
   useEffect(()=>{
     location&&GetNearByPlace();
   },[location])
-  
+
   const GetNearByPlace=()=>{
     const data={
       "includedTypes": ['electric_vehicle_charging_station'],
@@ -29,7 +29,7 @@ export default function HomeScreen() {
     }
   }
     GlobalApi.NewNearByPlace(data).then(resp=>{
-      console.log(resp.data);
+      console.log(JSON.stringify(resp.data));
     })
   }
 
