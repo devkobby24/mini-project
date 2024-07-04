@@ -19,7 +19,7 @@ export default function SearchBar({searchedLocation}) {
       }}
       query={{  
         key: 'AIzaSyDGAs9NQQD_LzlJ88zSYWDyWMwQXkOMo8M',
-        language: 'en',
+        language: 'en',  
       }}
                  
     />
