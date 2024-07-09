@@ -9,6 +9,7 @@ export default function PlaceListView({placeList}) {
       <FlatList
         data={placeList}
         horizontal={true}
+        showsHorizontalScrollIndicator={false}
         renderItem={({item,index})=>(
             <View key={index}>
                 <PlaceItem place={item} />
