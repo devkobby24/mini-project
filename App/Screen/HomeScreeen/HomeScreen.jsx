@@ -5,6 +5,7 @@ import Header from './Header'
 import SearchBar from './SearchBar'
 import { UserLocationContext } from '../../Context/UserLocationContext'
 import GlobalApi from '../../Utils/GlobalApi'
+import PlaceListView from './PlaceListView'
 
 export default function HomeScreen() { 
 
@@ -37,7 +38,7 @@ export default function HomeScreen() {
   // }
   GlobalApi.NewNearByPlace(data).then(resp => {
       console.log(JSON.stringify(resp.data));
-      setPlaceList(resp.data); // Assuming you want to update placeList with response data
+      setPlaceList(resp.data?.places); // Assuming you want to update placeList with response data
     }).catch(error => {
       console.error("Error fetching nearby places:", error);
     });
@@ -50,6 +51,9 @@ export default function HomeScreen() {
         <SearchBar searchedLocation={(location)=>console.log(location)}/>
       </View>
       <AppMapView />
+      <View style={styles.placeListContainer}>
+        {placeList&&<PlaceListView placeList={placeList}/>}
+      </View>
     </View>
   )
 }   
@@ -61,5 +65,11 @@ const styles = StyleSheet.create({
     padding:10,
     width:'100%',
     paddingHorizontal:20
+  },
+  placeListContainer:{
+    position: 'absolute',
+    bottom:0,
+    zIndex:10,
+    width:'100%'
   }
 });
