@@ -1,4 +1,4 @@
-import { View, Text, Image, StyleSheet } from 'react-native'
+import { View, Image, StyleSheet } from 'react-native'
 import React from 'react'
 import { useUser } from '@clerk/clerk-expo'
 import { FontAwesome } from '@expo/vector-icons';

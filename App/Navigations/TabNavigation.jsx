@@ -2,7 +2,7 @@ import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeScreen from '../Screen/HomeScreeen/HomeScreen';
 import FavoriteScreen from '../Screen/FavoriteScreen/FavoriteScreen';
-import ProfileScrren from '../Screen/ProfileScreen/ProfileScrren';
+import ProfileScreen from '../Screen/ProfileScreen/ProfileScreen';
 import { AntDesign } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';   
 import { Feather } from '@expo/vector-icons';   
@@ -38,7 +38,7 @@ export default function TabNavigation() {
         }} 
          />
         <Tab.Screen name='Profile'
-        component={ProfileScrren} 
+        component={ProfileScreen} 
         options={{
             tabBarLabel: 'Profile',
             tabBarActiveTintColor:Colors.PRIMARY,
