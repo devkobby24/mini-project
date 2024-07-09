@@ -1,4 +1,4 @@
-import { View, Text, SafeAreaView, StyleSheet } from 'react-native'
+import { View, StyleSheet } from 'react-native'
 import React, { useContext, useEffect, useState } from 'react'
 import AppMapView from './AppMapView'
 import Header from './Header'
