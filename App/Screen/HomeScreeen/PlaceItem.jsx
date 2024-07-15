@@ -2,6 +2,8 @@ import { View, Text, Image, Dimensions } from 'react-native'
 import React from 'react'
 import Colors from '../../Utils/Colors'
 import GlobalApi from '../../Utils/GlobalApi'
+import { LinearGradient } from 'expo-linear-gradient';
+import { FontAwesome6 } from '@expo/vector-icons';
 
 export default function PlaceItem({place}) {
 
@@ -13,12 +15,18 @@ export default function PlaceItem({place}) {
             margin:5,
             borderRadius:10}}
     >
+      <LinearGradient 
+        colors={['transparent','#ffffff','#ffffff']} 
+      >
       <Image source={
-        place?.photo?
+        place?.photos?
         {uri:PLACE_PHOTO_BASE_URL+place?.photos[0]?.name+
         "media?key="+ GlobalApi.API_KEY+"&maxHeightPx=800&maxWidthPx=1200"}
         :require('./../../../assets/images/logo.jpg')} 
-        style={{width:'100%',borderRadius:10,height:150}}
+        style={{width:'100%',
+                borderRadius:10,
+                height:150,
+                zIndex:-1}}
       />
       <View style={{padding:15}}>
     <Text style={{
@@ -43,9 +51,18 @@ export default function PlaceItem({place}) {
           fontFamily:'outfit-medium',
           fontSize:20,
           marginTop:2
-        }}>{place.evChargeOptions?.connectorCount}</Text>
+        }}>{place.evChargeOptions?.connectorCount} Points</Text>
       </View>
+        <View style={{
+          padding:12,
+          backgroundColor:Colors.PRIMARY,
+          borderRadius:6,
+          paddingHorizontal:14
+        }}> 
+          <FontAwesome6 name="location-arrow" size={24} color="white" />
+        </View>
       </View>
+      </LinearGradient>
     </View>
   )
 }
