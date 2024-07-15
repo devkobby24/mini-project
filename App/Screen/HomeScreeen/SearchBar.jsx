@@ -14,7 +14,7 @@ export default function SearchBar({searchedLocation}) {
       fetchDetails={true}
       enablePoweredByContainer={false}
       onPress={(data, details = null) => {
-            
+         console.log(data, details);   
         searchedLocation(details?.geometry?.location);
       }}
       query={{  

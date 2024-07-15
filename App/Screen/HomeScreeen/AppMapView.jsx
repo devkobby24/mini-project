@@ -14,16 +14,16 @@ export default function AppMapView() {
       customMapStyle={MapViewStlye}
       // showsUserLocation={true}
       region={{
-        latitude: location?.latitude,
-        longitude: location?.longitude,
+        latitude: 5.6311,
+        longitude: -0.1609,
         latitudeDelta:0.0422,
         longitudeDelta:0.0421
       }} 
       >
         <Marker 
           coordinate={{
-            latitude: location?.latitude,
-            longitude: location?.longitude,
+            latitude: 5.6311,
+            longitude: -0.1609
           }}
         >
 

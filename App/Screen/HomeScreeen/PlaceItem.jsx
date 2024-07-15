@@ -15,10 +15,10 @@ export default function PlaceItem({place}) {
     >
       <Image source={
         place?.photo?
-        PLACE_PHOTO_BASE_URL+place?.photos[0]?.name+
-        "media?key="+ GlobalApi.API_KEY+"&maxHeightPx=800&maxWidthPx=1200"
+        {uri:PLACE_PHOTO_BASE_URL+place?.photos[0]?.name+
+        "media?key="+ GlobalApi.API_KEY+"&maxHeightPx=800&maxWidthPx=1200"}
         :require('./../../../assets/images/logo.jpg')} 
-        style={{width:'100%',borderRadius:10,height:130}}
+        style={{width:'100%',borderRadius:10,height:150}}
       />
       <View style={{padding:15}}>
     <Text style={{
