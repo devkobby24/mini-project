@@ -19,7 +19,20 @@ export default function PlaceItem({place}) {
         fontSize:23,
         fontFamily:'outfit-medium'
     }}>{place.displayName?.text}</Text>
-    <Text>{}</Text>
+    <Text style={{
+      color:Colors.GRAY,
+      fontFamily: 'outfit'
+    }}>{place?.shortFormattedAddress}</Text>
+
+      <View style={{
+        marginTop:5,
+      }}>
+        <Text style={{
+          fontFamily:'outfit',
+          color:Colors.GRAY
+        }}>Connectors</Text>
+        <Text>{place.evChargeOptions?.connectorCount}</Text>
+      </View>
       </View>
     </View>
   )
