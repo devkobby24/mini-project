@@ -7,7 +7,7 @@ import MapViewStlye from '../../Utils/MapViewStyle.json'
 export default function AppMapView() {
 
     const {location,setLocation} = useContext(UserLocationContext);   
-  return location?.latitude&&(
+  return location?.latitude&&( 
     <View>
       <MapView style={styles.map}
       provider={PROVIDER_DEFAULT}
