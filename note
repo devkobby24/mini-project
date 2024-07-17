@@ -1,0 +1,209 @@
+{
+  "places": [
+    {
+      "formattedAddress": "2 Dadeban Rd, Accra, Ghana",
+      "location": {
+        "latitude": 5.5702055,
+        "longitude": -0.22200679999999998
+      },
+      "displayName": {
+        "text": "iJANU, Limited",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "2 Dadeban Rd, Accra",
+      "photos": [
+        {
+          "name": "places/ChIJHabMF72b3w8R3fXG4RKo7Nk/photos/AUc7tXUcoy0CwY5V9uioVZ6v_ixMSJbNkSbp5x37W32vlMXMKZ2c7pbdfb6o9GnBSZql-tWIDDuHD7Byb5u72w9SY81O8SO7FJb6daNevbrqSJSKo9vvTq5aZlcvBnnfM3lKjc-5ieWLiCwh6QZ7NUCKyFrvnrYhL48QNgKk",
+          "widthPx": 3060,
+          "heightPx": 4080,
+          "authorAttributions": [
+            {
+              "displayName": "Kofi Ansong (Kofistone)",
+              "uri": "//maps.google.com/maps/contrib/100552095128666791616",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUf6wsVurwWsGeAeMHdU6qpDqNhXdjaFsgmeiiCYxXNHqig1nKH7g=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJHabMF72b3w8R3fXG4RKo7Nk/photos/AUc7tXV8BkSN2-iQNVElP1hLAoCjOTQatt7y6Cs88aIKhvKGrdzl_nEJFSLaDAYtnsLFh42-RK_9eHYMDv-qyinpzDDIQWm5yh9hgxIFGcKD7gyo5wF0yVzkZ7e26AVeoh7BNSB6PuV-CGZX8XS0yORAX7UFYqBllXPG7X8c",
+          "widthPx": 3060,
+          "heightPx": 4080,
+          "authorAttributions": [
+            {
+              "displayName": "Kofi Ansong (Kofistone)",
+              "uri": "//maps.google.com/maps/contrib/100552095128666791616",
+              "photoUri": "//lh3.googleusercontent.com/a-/ALV-UjUf6wsVurwWsGeAeMHdU6qpDqNhXdjaFsgmeiiCYxXNHqig1nKH7g=s100-p-k-no-mo"
+            }
+          ]
+        },
+        {
+          "name": "places/ChIJHabMF72b3w8R3fXG4RKo7Nk/photos/AUc7tXWM341Sck2dykdthadq5bIzKSbCCYBAavI3MpoAAGsjS9E57OUH-_H5a25vRFet924FYlPz4TfS0G6Ps7vmz24lXR-L0ce2a1-8VnY6sKWjPn3iI635cSOFfGKc5rdX2xzxEOlcAlo5zzt5mWxkdL8QsLh_gPy1vWxa",
+          "widthPx": 1068,
+          "heightPx": 684,
+          "authorAttributions": [
+            {
+              "displayName": "iJANU, Limited",
+              "uri": "//maps.google.com/maps/contrib/111626029897658954412",
+              "photoUri": "//lh3.googleusercontent.com/a/ACg8ocJYKo9fRJWW6Ib-uQNnUln-4EWTS_G0OZtbXc9w1WYWxCqbsw=s100-p-k-no-mo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "formattedAddress": "PR5X+GJ8, Ntreh Ave, Adenta Municipality, Ghana",
+      "location": {
+        "latitude": 5.7087781,
+        "longitude": -0.15092129999999998
+      },
+      "displayName": {
+        "text": "Electric Vehicle Charging Station",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "PR5X+GJ8, Ntreh Ave, Adenta Municipality",
+      "evChargeOptions": {
+        "connectorCount": 6,
+        "connectorAggregation": [
+          {
+            "type": "EV_CONNECTOR_TYPE_OTHER",
+            "count": 6
+          }
+        ]
+      }
+    },
+    {
+      "formattedAddress": "JRFW+XPQ, Accra, Ghana",
+      "location": {
+        "latitude": 5.624953400000001,
+        "longitude": -0.1531283
+      },
+      "displayName": {
+        "text": "Electric Vehicle Charging Station",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "JRFW+XPQ, Accra",
+      "evChargeOptions": {
+        "connectorCount": 1,
+        "connectorAggregation": [
+          {
+            "type": "EV_CONNECTOR_TYPE_TYPE_2",
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "formattedAddress": "JMHM+3PW, Ablekuma New Town, Ghana",
+      "location": {
+        "latitude": 5.6273646,
+        "longitude": -0.3151121
+      },
+      "displayName": {
+        "text": "Electric Vehicle Charging Station",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "JMHM+3PW, Ablekuma New Town",
+      "evChargeOptions": {
+        "connectorCount": 8,
+        "connectorAggregation": [
+          {
+            "type": "EV_CONNECTOR_TYPE_OTHER",
+            "maxChargeRateKw": 500,
+            "count": 8
+          }
+        ]
+      }
+    },
+    {
+      "formattedAddress": "5 Spintex Rd, Accra, Ghana",
+      "location": {
+        "latitude": 5.62547,
+        "longitude": -0.153285
+      },
+      "displayName": {
+        "text": "Porsche Destination Charging",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "5 Spintex Rd, Accra",
+      "evChargeOptions": {
+        "connectorCount": 1,
+        "connectorAggregation": [
+          {
+            "type": "EV_CONNECTOR_TYPE_TYPE_2",
+            "maxChargeRateKw": 11,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "formattedAddress": "HPPH+VFR, Accra, Ghana",
+      "location": {
+        "latitude": 5.5872427,
+        "longitude": -0.2713735
+      },
+      "displayName": {
+        "text": "Electric Vehicle Charging Station",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "HPPH+VFR, Accra",
+      "evChargeOptions": {}
+    },
+    {
+      "formattedAddress": "66 Gamel Abdul Nasser Ave, Accra, Ghana",
+      "location": {
+        "latitude": 5.55513,
+        "longitude": -0.19838999999999998
+      },
+      "displayName": {
+        "text": "Porsche Destination Charging",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "66 Gamel Abdul Nasser Ave, Accra",
+      "evChargeOptions": {
+        "connectorCount": 1,
+        "connectorAggregation": [
+          {
+            "type": "EV_CONNECTOR_TYPE_TYPE_2",
+            "maxChargeRateKw": 11,
+            "count": 1
+          }
+        ]
+      }
+    },
+    {
+      "formattedAddress": "63 Boundary Road, M202 Obgojo, 63 Boundary Rd, Accra, Ghana",
+      "location": {
+        "latitude": 5.6499156,
+        "longitude": -0.15059129999999998
+      },
+      "displayName": {
+        "text": "Electric Vehicle Charging Station",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "63 Boundary Road, M202 Obgojo, 63 Boundary Rd, Accra"
+    },
+    {
+      "formattedAddress": "37 Liberation Road, Accra, Ghana",
+      "location": {
+        "latitude": 5.592041699999999,
+        "longitude": -0.18105659999999998
+      },
+      "displayName": {
+        "text": "Porsche Destination Charging",
+        "languageCode": "en"
+      },
+      "shortFormattedAddress": "37 Liberation Road, Accra",
+      "evChargeOptions": {
+        "connectorCount": 1,
+        "connectorAggregation": [
+          {
+            "type": "EV_CONNECTOR_TYPE_TYPE_2",
+            "maxChargeRateKw": 11,
+            "count": 1
+          }
+        ]
+      }
+    }
+  ]
+}

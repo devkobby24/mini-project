@@ -13,22 +13,20 @@ export default function HomeScreen() {
   const [placeList,setPlaceList]=useState([])
   
   useEffect(() => {
-    if (location) {
       GetNearByPlace();
-    }
-  }, [location]);
+  },[location]);
 
-  const GetNearByPlace=()=>{
+  const GetNearByPlace= async ()=>{
     const data={
       "includedTypes": ['electric_vehicle_charging_station'],
       "maxResultCount": 10,
       "locationRestriction": {
       "circle": {
       "center": {
-        "latitude": location?.latitude,
-        "longitude": location?.longitude
+        "latitude": 5.6311,
+        "longitude": -0.1609
       },
-      "radius": 5000.0
+      "radius": 50000.0
       }
     }
   }
@@ -37,10 +35,9 @@ export default function HomeScreen() {
   //   })
   // }
   GlobalApi.NewNearByPlace(data).then(resp => {
-      console.log(JSON.stringify(resp.data));
-      setPlaceList(resp.data?.places); // Assuming you want to update placeList with response data
+      console.log(JSON.stringify(resp.data)); 
     }).catch(error => {
-      console.error("Error fetching nearby places:", error);
+      console.error(error);
     });
   }
 

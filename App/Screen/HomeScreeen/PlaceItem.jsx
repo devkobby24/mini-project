@@ -37,7 +37,7 @@ export default function PlaceItem({place}) {
     <Text style={{
       color:Colors.GRAY,
       fontFamily: 'outfit'
-    }}>{place?.shortFormattedAddress}</Text>
+    }}>{place.shortFormattedAddress}</Text>
 
       <View style={{
         marginTop:5,
