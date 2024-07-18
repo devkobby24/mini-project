@@ -28,7 +28,7 @@ export default function PlaceItem({place}) {
                 height:150,
                 zIndex:-1}}
       />
-      <View style={{padding:15}}>
+      <View style={{padding:5}}>
     <Text style={{
         color:Colors.BLACK,
         fontSize:23,
@@ -52,15 +52,16 @@ export default function PlaceItem({place}) {
           fontSize:20,
           marginTop:2
         }}>{place.evChargeOptions?.connectorCount} Points</Text>
-      </View>
         <View style={{
           padding:12,
           backgroundColor:Colors.PRIMARY,
           borderRadius:6,
-          paddingHorizontal:14
+          // paddingHorizontal:14,
+          marginLeft: '85%'
         }}> 
           <FontAwesome6 name="location-arrow" size={25} color="white" />
         </View>
+      </View>
       </View>
       </LinearGradient>
     </View>

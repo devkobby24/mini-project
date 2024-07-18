@@ -15,8 +15,8 @@ export default function AppMapView({placeList}) {
       customMapStyle={MapViewStyle}
       // showsUserLocation={true}
       region={{
-        latitude: location?.latitude,
-        longitude: location?.longitude,
+        latitude: 5.6311,
+        longitude: -0.1609,
         latitudeDelta:0.0422,
         longitudeDelta:0.0421
       }} 

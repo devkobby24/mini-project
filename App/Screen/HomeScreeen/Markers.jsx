@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { Image, StyleSheet, Text, View } from 'react-native'
 import React, { useContext } from 'react'
 import { Marker } from 'react-native-maps'
 import { SelectMarkerContext } from '../../Context/SelectMarkerContext'
@@ -6,7 +6,7 @@ import { SelectMarkerContext } from '../../Context/SelectMarkerContext'
 export default function Markers({index, place}) {
 
   const {selectedMarker, setSelectedMarker}=useContext(SelectMarkerContext)
-  return (
+  return place && (
     <Marker 
     coordinate={{
       latitude: place.location?.latitude,
@@ -16,9 +16,9 @@ export default function Markers({index, place}) {
     onPress={()=>setSelectedMarker(index)}
   >
 
-    <Image source={require('./../../../assets/images/marker.png')} 
+    {/* <Image source={require('./../../../assets/images/marker.png')} 
       style={{width:60,height:60}}
-    />
+    /> */}
   </Marker> 
   )
 }
