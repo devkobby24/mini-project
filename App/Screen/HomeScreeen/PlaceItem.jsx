@@ -22,7 +22,7 @@ export default function PlaceItem({place}) {
         place?.photos?
         {uri:PLACE_PHOTO_BASE_URL+place?.photos[0]?.name+
         "media?key="+ GlobalApi.API_KEY+"&maxHeightPx=800&maxWidthPx=1200"}
-        :require('./../../../assets/images/logo.jpg')} 
+        :require('./../../../assets/images/Station.jpg')} 
         style={{width:'100%',
                 borderRadius:10,
                 height:150,
@@ -59,7 +59,7 @@ export default function PlaceItem({place}) {
           borderRadius:6,
           paddingHorizontal:14
         }}> 
-          <FontAwesome6 name="location-arrow" size={24} color="white" />
+          <FontAwesome6 name="location-arrow" size={25} color="white" />
         </View>
       </View>
       </LinearGradient>
