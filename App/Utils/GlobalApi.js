@@ -13,7 +13,8 @@ const config={
             'places.location',
             'places.evChargeOptions',
             'places.shortFormattedAddress',
-            'places.photos']
+            'places.photos',
+            'places.id']
     }
 }
 
