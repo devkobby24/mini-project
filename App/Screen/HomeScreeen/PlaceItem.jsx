@@ -1,13 +1,27 @@
-import { View, Text, Image, Dimensions } from 'react-native'
+import { View, Text, Image, Dimensions, Pressable } from 'react-native'
 import React from 'react'
 import Colors from '../../Utils/Colors'
 import GlobalApi from '../../Utils/GlobalApi'
 import { LinearGradient } from 'expo-linear-gradient';
 import { FontAwesome6 } from '@expo/vector-icons';
+import { Ionicons } from '@expo/vector-icons';
+import { getFirestore } from "firebase/firestore";
+import { app } from '../../Utils/FirebaseConfig';
+import { doc, setDoc } from "firebase/firestore";
 
 export default function PlaceItem({place}) {
 
   const PLACE_PHOTO_BASE_URL="https://places.googleapis.com/v1/"
+
+  const db = getFirestore(app);
+  const onSetFav=async()=>{
+    await setDoc(doc(db, "ev-fav-place", "LA"), {
+      name: "Los Angeles",
+      state: "CA",
+      country: "USA"
+    });
+  }
+
   return (
     <View
         style={{width:Dimensions.get('screen').width*0.9,
@@ -18,6 +32,9 @@ export default function PlaceItem({place}) {
       <LinearGradient 
         colors={['transparent','#ffffff','#ffffff']} 
       >
+        <Pressable style={{position:'absolute',right:0,margin:5}} onPress={()=>onSetFav()}>
+          <Ionicons name="heart-outline" size={30} color="white" />
+        </Pressable>
       <Image source={
         place?.photos?
         {uri:PLACE_PHOTO_BASE_URL+place?.photos[0]?.name+
