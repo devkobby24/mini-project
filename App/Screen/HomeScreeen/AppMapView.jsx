@@ -17,7 +17,7 @@ export default function AppMapView({placeList}) {
       region={{
         latitude: 5.6311,
         longitude: -0.1609,
-        latitudeDelta:0.0422,
+        latitudeDelta:0.0522,
         longitudeDelta:0.0421
       }} 
       >

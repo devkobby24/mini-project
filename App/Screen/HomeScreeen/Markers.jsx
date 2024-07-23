@@ -16,9 +16,9 @@ export default function Markers({index, place}) {
     onPress={()=>setSelectedMarker(index)}
   >
 
-    {/* <Image source={require('./../../../assets/images/marker.png')} 
+    <Image source={require('./../../../assets/images/pngwing.com.png')} 
       style={{width:60,height:60}}
-    /> */}
+    />
   </Marker> 
   )
 }
