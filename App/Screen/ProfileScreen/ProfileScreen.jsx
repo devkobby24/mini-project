@@ -51,7 +51,10 @@ const styles = StyleSheet.create({
   userImage:{
       width:250,
       height:250,
-      borderRadius:100
+      borderStyle:'dotted',
+      borderRadius:100,
+      borderWidth:5,
+      borderColor:Colors.PRIMARY
   },
   uName:{
     fontFamily:'outfit-medium',
