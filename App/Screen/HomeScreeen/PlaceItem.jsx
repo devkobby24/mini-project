@@ -53,8 +53,10 @@ export default function PlaceItem({ place, isFav, markedFav }) {
         width: Dimensions.get("screen").width * 0.95,
         backgroundColor: Colors.WHITE,
         margin: 5,
-        marginLeft: 12,
+        marginLeft: 15,
+        marginRight:5,
         borderRadius: 10,
+        borderBottomEndRadius: 10
       }}
     >
       <LinearGradient colors={["transparent", "#ffffff", "#ffffff"]}>
@@ -136,7 +138,7 @@ export default function PlaceItem({ place, isFav, markedFav }) {
                 backgroundColor: Colors.PRIMARY,
                 borderRadius: 6,
                 // paddingHorizontal:14,
-                marginLeft: "85%",
+                marginLeft: "87%",
               }}
             >
               <FontAwesome6 name="location-arrow" size={25} color="white" />
