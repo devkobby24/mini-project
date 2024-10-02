@@ -27,10 +27,6 @@ export default function AppMapView({placeList}) {
             longitude: location?.longitude
           }}
         >
-
-          {/* <Image source={require('./../../../assets/images/marker.png')} 
-            style={{width:60,height:60}}
-          /> */}
         </Marker> :null}
 
         {placeList&&placeList.map((item, index)=>(
