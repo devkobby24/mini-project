@@ -1,13 +1,13 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import { FIREBASE_API_KEY } from "@env"
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyD7XdSEnD-uJRuV2DdLeSrfU6eLFDURkRU",
+  apiKey: FIREBASE_API_KEY,
   authDomain: "mini-project-b4ea0.firebaseapp.com",
   projectId: "mini-project-b4ea0",
   storageBucket: "mini-project-b4ea0.appspot.com",
