@@ -19,7 +19,7 @@ export default function Header() {
         style={{
           padding: 10,
           fontFamily: "outfit-medium",
-          fontSize: 30,
+          fontSize: 40,
           textAlign: "center"
         }}
       >
