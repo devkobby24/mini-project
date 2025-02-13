@@ -54,7 +54,7 @@ export default function FavoriteScreen() {
             justifyContent: "center",
           }}
         >
-          <ActivityIndicator size={"large"} color={Colors.PRIMARY} />
+          <ActivityIndicator size={'large'} color={Colors.PRIMARY} />
           <Text style={{ fontFamily: "outfit", marginTop: 5 }}>Loading...</Text>
         </View>
       ) : null}
